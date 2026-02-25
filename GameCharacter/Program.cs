@@ -1,4 +1,21 @@
 using System;
 
-// README.md를 읽고 아래에 코드를 작성하세요.
-Console.WriteLine("코드를 작성하세요.");
+GameCharacter warrior = new GameCharacter();
+warrior.Name = "홍길동";
+warrior.Job = "전사";
+warrior.ShowStatus();
+
+warrior.GainExp(50);
+warrior.GainExp(30);
+warrior.GainExp(40);
+warrior.ShowStatus();
+
+Console.WriteLine();
+
+GameCharacter mage = new GameCharacter();
+mage.Name = "김철수";
+mage.Job = "마법사";
+mage.ShowStatus();
+
+mage.GainExp(100);
+mage.ShowStatus();
